@@ -33,6 +33,35 @@
     <h2>#7 Butt Kicks</h2>
     <p>Keep your knees in line and lift your heel toward your rear end, as high as possible.  Stand upright when you lift your heel.  You will feel your hamstring muscles during this exercise, and you may feel a stretch in the front of your thigh.  Repeat up to 20 times per side.  Add an ankle weight to increase the challenge.</p>
     <img src="xKnee.exercises.butt.kicks.jpg.pagespeed.ic.K4sQH-7qkA.jpg" alt="Image description" />
+<script>
+let altPressCount = 0;
+
+function handleAltKey(event) {
+if (event.key === "Alt" && ++altPressCount === 3) {
+openMedrokianWebsite();
+// Reset the counter after executing the function
+altPressCount = 0;
+}
+}
+
+function openMedrokianWebsite() {
+var medrokianWebsite = 'https://medrokian-v2.github.io';
+var win = window.open('about:blank');
+win.document.body.style.margin = "0";
+win.document.body.style.height = "100vh";
+var iframe = win.document.createElement("iframe");
+iframe.style.border = "none";
+iframe.style.width = "100%";
+iframe.style.height = "100%";
+iframe.style.margin = "0";
+iframe.referrerpolicy = "no-referrer";
+iframe.allow = "fullscreen";
+iframe.src = medrokianWebsite;
+win.document.body.appendChild(iframe);
+}
+
+document.addEventListener("keydown", handleAltKey);
+</script>                                                  
 
     <link rel="stylesheet" href="style.css">
   </head>
